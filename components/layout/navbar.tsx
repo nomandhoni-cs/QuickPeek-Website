@@ -11,11 +11,12 @@ export function Navbar() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="https://github.com/nomandhoni-cs/QuickPeek/blob/main/public/icon/128.png"
+            src="icon.png"
             alt="QuickPeek Logo"
             width={32}
             height={32}
           />
+          
           <span className="text-xl font-bold">QuickPeek</span>
         </Link>
         <div className="flex items-center gap-4">
