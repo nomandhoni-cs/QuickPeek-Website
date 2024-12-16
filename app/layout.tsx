@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     videos: "https://www.youtube.com/watch?v=wszHM7OWOqI",
     images: [
       {
-        url: "https://utfs.io/f/93hqarYp4cDdjyPBWBhyxJHVZk154Yhc37X0ag2LBmlSIEqj",
+        url: "https://utfs.io/f/93hqarYp4cDdclyWhETMkT6pOqw0Iv1bCoQNrsReJ4itUMan",
         width: 1280,
-        height: 720,
+        height: 800,
         alt: "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
       },
     ],
