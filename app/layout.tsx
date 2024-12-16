@@ -13,6 +13,27 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.png",
   },
+  openGraph: {
+    locale: "en",
+    title: "QuickPeek - Spotlight and Alfred like Search for Browsers",
+    description:
+      "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
+    url: "https://quickpeek.vercel.app/",
+    type: "website",
+    videos: "https://www.youtube.com/watch?v=wszHM7OWOqI",
+    images: [
+      {
+        url: "https://utfs.io/f/93hqarYp4cDdjyPBWBhyxJHVZk154Yhc37X0ag2LBmlSIEqj",
+        width: 1280,
+        height: 720,
+        alt: "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
+      },
+    ],
+    siteName: "QuickPeek",
+  },
+  twitter: {
+    site: "https://quickpeek.vercel.app",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +46,7 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <meta
         name="google-site-verification"
-        content="EpXHPJCv-cFdq90wsTAQuclbuT8v4MHJzk3BmPUXBwk"
+        content="_ZvWyaBTcsL0xM4Ia6JfjEGeaWH6OSYJTrIQWCKhj7I"
       />
       <body className={inter.className}>
         <ThemeProvider
