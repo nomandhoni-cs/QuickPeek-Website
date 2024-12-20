@@ -1,15 +1,28 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Navbar } from "@/components/layout/navbar";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
-  title: "QuickPeek - Spotlight and Alfred like Search for Browsers",
+  title:
+    "QuickPeek - Spotlight, PowerToys & Alfred like Search for Your Browser",
   description:
-    "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
+    "QuickPeek brings powerful, efficient, and intuitive search functionality to your browser. Manage tabs, find bookmarks, and search history seamlessly.",
+  keywords: [
+    "browser extension",
+    "search",
+    "productivity",
+    "tab management",
+    "bookmarks",
+    "browser history",
+  ],
   icons: {
     icon: "/icon.png",
   },
@@ -23,8 +36,8 @@ export const metadata: Metadata = {
     videos: "https://www.youtube.com/watch?v=wszHM7OWOqI",
     images: [
       {
-        url: "https://utfs.io/f/93hqarYp4cDdPppPh7ETvBIpefEGxu5OdC4njamZktRoXUhK",
-        width: 1280,
+        url: "https://utfs.io/f/93hqarYp4cDdH9RBZN1StQrPMZGIfvFBR85sjnJqaViD9Wgu",
+        width: 1600,
         height: 800,
         alt: "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
       },
@@ -48,15 +61,16 @@ export default function RootLayout({
         name="google-site-verification"
         content="_ZvWyaBTcsL0xM4Ia6JfjEGeaWH6OSYJTrIQWCKhj7I"
       />
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
+          <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
