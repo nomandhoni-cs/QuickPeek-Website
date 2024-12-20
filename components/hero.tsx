@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.5))]" />
-      <div className="container relative mx-auto px-4 py-24 text-center sm:px-6 lg:px-8">
+      <div className="container relative mx-auto px-4 py-28 text-center sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold tracking-normal sm:text-5xl md:text-6xl">
           <span className="block">QuickPeek</span>
           <span className="block">Spotlight, PowerToys & Alfred</span>

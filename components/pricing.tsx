@@ -12,11 +12,29 @@ import {
 
 const plans = [
   {
+    name: "Free Plan",
+    description: "Free forever",
+    price: "$0",
+    features: [
+      "Multiple search engine support",
+      "Recent searches history",
+      "Google search integration",
+      "Bing search integration",
+      "Ecosia search integration",
+      "DuckDuckGo search integration",
+    ],
+    link: "https://chromewebstore.google.com/detail/quickpeek-spotlight-alfre/ebcfioefbiighecapdcndkojahlhambn",
+    buttonText: "Download Now",
+    highlight: false,
+  },
+  {
     name: "Individual Plan",
     description: "1 time Activation",
     price: "$5.99",
     features: ["1 License Key", "Lifetime Access", "All premium features"],
     link: "https://pollux.lemonsqueezy.com/buy/6916e832-7744-4f66-bfdb-831a7185aeca",
+    buttonText: "Buy Now",
+    highlight: true,
   },
   {
     name: "Supporter PowerUser Plan",
@@ -28,6 +46,8 @@ const plans = [
       "All premium features",
     ],
     link: "https://pollux.lemonsqueezy.com/buy/1f99db5f-7444-4e72-80d9-d1a6ba3cc2c0",
+    buttonText: "Buy Now",
+    highlight: true,
   },
 ];
 
@@ -56,13 +76,20 @@ export default function Pricing() {
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Choose the plan that's right for you
           </p>
+          <div className="text-center p-4 border rounded-lg bg-primary/10 mt-4">
+            <p className="font-medium">
+              Try all premium features free for 30 days!
+            </p>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-16 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 mt-16 max-w-7xl mx-auto">
           {plans.map((plan) => (
             <Card
               key={plan.name}
-              className="flex flex-col max-w-sm mx-auto w-full"
+              className={`flex flex-col mx-auto w-full ${
+                plan.highlight ? "border-primary/50" : ""
+              }`}
             >
               <CardHeader>
                 <CardTitle>{plan.name}</CardTitle>
@@ -80,8 +107,12 @@ export default function Pricing() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full">
-                  <Link href={plan.link}>Buy Now</Link>
+                <Button
+                  asChild
+                  className="w-full"
+                  variant={plan.highlight ? "default" : "outline"}
+                >
+                  <Link href={plan.link}>{plan.buttonText}</Link>
                 </Button>
               </CardFooter>
             </Card>
