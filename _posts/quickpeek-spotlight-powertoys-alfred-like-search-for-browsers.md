@@ -1,13 +1,13 @@
 ---
 title: "QuickPeek - Spotlight, PowerToys & Alfred-like Search for Browsers"
 excerpt: "Introducing QuickPeek: a powerful, efficient, and intuitive search tool for your browser. Boost productivity, enhance multitasking, and discover a smarter browsing experience!"
-coverImage: "https://utfs.io/f/93hqarYp4cDdH9RBZN1StQrPMZGIfvFBR85sjnJqaViD9Wgu"
+coverImage: "https://utfs.io/f/93hqarYp4cDdclQbV3SMkT6pOqw0Iv1bCoQNrsReJ4itUMan"
 date: "2024-12-20T10:00:00.000Z"
 author:
   name: Noman Dhoni
   picture: "https://utfs.io/f/93hqarYp4cDdXVVKvxu0qrePa5DMfGYLJ8imsxU7z6XtIZHu"
 ogImage:
-  url: "https://utfs.io/f/93hqarYp4cDdH9RBZN1StQrPMZGIfvFBR85sjnJqaViD9Wgu"
+  url: "https://utfs.io/f/93hqarYp4cDdclQbV3SMkT6pOqw0Iv1bCoQNrsReJ4itUMan"
 ---
 
 ## QuickPeek: Spotlight, PowerToys & Alfred-like Search for Your Browser 🚀

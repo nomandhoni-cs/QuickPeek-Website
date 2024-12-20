@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     locale: "en",
-    title: "QuickPeek - Spotlight and Alfred like Search for Browsers",
+    title: "QuickPeek - Spotlight, PowerToys & Alfred like Search for Browsers",
     description:
       "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
     url: "https://quickpeek.vercel.app/",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     videos: "https://www.youtube.com/watch?v=wszHM7OWOqI",
     images: [
       {
-        url: "https://utfs.io/f/93hqarYp4cDdH9RBZN1StQrPMZGIfvFBR85sjnJqaViD9Wgu",
-        width: 1600,
-        height: 800,
+        url: "https://utfs.io/f/93hqarYp4cDdclQbV3SMkT6pOqw0Iv1bCoQNrsReJ4itUMan",
+        width: 1920,
+        height: 1080,
         alt: "QuickPeek is a powerful Chrome extension for searching tabs, history, bookmarks, and downloaded files.",
       },
     ],
